@@ -51,7 +51,7 @@ router.post("/register", (req, res) => {
           }
         });
     } else {
-      res.status(400).json({ message: "Please enter a username and password." });
+      res.status(500).json({ message: "Please enter a username and password." });
     }
 });
 
